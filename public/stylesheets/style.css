@@ -1,0 +1,163 @@
+body {
+  padding: 50px;
+  font-family: 'Roboto','nanumbarungothicultralight' ,sans-serif;
+  background-color: black;
+  overflow: hidden;
+}
+#main{
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 3%;
+  width: 94%;
+  height: 96%;
+}
+a {
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  width: auto;
+  height: auto;
+}
+ul li{
+  width: 120px;
+}
+nav {
+  position: absolute;
+  left: 0;
+  top: 5%;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  z-index: 2;
+}
+img{
+  vertical-align: middle;
+}
+#nav > div{
+  float: left;
+}
+ul > li{
+  display: inline;
+}
+div > ul{
+  vertical-align: middle;
+}
+#nav_a{
+  display: inline-block;
+  width: 60px;
+  height: auto;
+  color: #505050;
+  transition-duration: 0.5s;
+}
+#nav_a:hover{
+  color: white;
+  transition-duration: 0.5s;
+}
+a#nav_a p{
+  vertical-align: middle;
+  text-align: center;
+}
+#nav_b{
+  display: inline-block;
+  width: 60px;
+  height: auto;
+  color: #505050;
+  transition-duration: 0.5s;
+}
+#nav_b:hover{
+  color: white;
+  transition-duration: 0.5s;
+}
+a#nav_b p{
+  text-align: center;
+}
+#nav_c{
+  display: inline-block;
+  width: 60px;
+  height: auto;
+  color: white;
+  transition-duration: 0.5s;
+}
+a#nav_c p{
+  vertical-align: middle;
+  text-align: center;
+}
+#nav_c:hover{
+  transition-duration: 0.5s;
+}
+#nav_img{
+  position: relative;
+  left: 70%;
+  width: 214px;
+  height: 60px;
+  display: inline;
+}
+#nav_list{
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 20%;
+}
+#nav_list li{
+  margin-right: 20px;
+}
+article{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#content_view{
+  padding-top: 20%;
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+#content_1{
+  width: auto;
+  height: auto;
+}
+p{
+  color: white;
+}
+#submit{
+  display: inline-block;
+  width: 184px;
+  height: 61px;
+  color: white;
+  vertical-align: middle;
+  border: 2px solid white;
+  transition: 0.3s ease-in-out;
+}
+#submit p{
+  color: white;
+}
+#submit:hover{
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+#submit:hover p{
+  background-color: white;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+div#submit p{
+  text-align: center;
+  vertical-align: middle;
+}
+#content_2{
+  visibility: hidden;
+}
+#content_3{
+  visibility: hidden;
+}
+footer{
+  position: absolute;
+  top: 95%;
+}
