@@ -1,15 +1,46 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html lang="ko">
   <head>
-    <title><%= title %></title>
+    <meta charset="utf-8"/>
+    <title>AnA Android&Application</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href="/stylesheets/nav.css"/>
+    <link rel="stylesheet" href="/stylesheets/jquery.mCustomScrollbar.min.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
     <link href="https://cdn.jsdelivr.net/g/font-nanum@1.0(nanumbarungothic/nanumbarungothicultralight.css+nanumgothic/nanumgothic.css)" rel="stylesheet" type="text/css">
-    <script src="/javascripts/initialize.js"></script>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/javascripts/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+      (function($){
+        $(window).load(function(){
+          $(".content").mCustomScrollbar();
+        });
+      })(jQuery);
+      $(".content").mCustomScrollbar({
+        axis:"xy" // horizontal scrollbar
+      });
+    </script>
   </head>
   <body>
-  <div id="main">
+  <div id="background"></div>
+   <div id="main">
   <nav>
       <div id="nav">
         <div style="display: inline" id="nav_image">
@@ -26,26 +57,118 @@
     </nav>
     <article>
       <div id="content_view">
-        <!--main content-->
-        <div>
-        <div id="content_1"></div>
+        <div id="content_1">
           <p id="content_1_main">2016 AnA 신입 부원 모집</p>
           <p id="content_1_2_main">3월 7일 월요일 시연회</p>
           <p id="content_1_3_main">3월 11일 금요일 면접</p>
-          <a href="http://www.google.com" id="submit">신청하기</a>
+          <a href="https://docs.google.com/forms/d/1H81jQ3ziaTXQPEmmHJpYYO4RnF63WmiV7AusByFbeQs/viewform" id="submit">신청하기</a>
         </div>
-        <div id="content_2">
-          test content_2
+        <div id="content_2" class="mCustomScrollbar" data-mcs-theme="light">
+          <div id="about">
+            <div>
+              <p>AnA는 안드로이드, 웹, Iot를 기획, 개발하는 동아리입니다.</p>
+            </div>
+            <div id="curriculum">
+              <div id="curriculum_android">
+                <div>
+                  <p style="font-size: xx-large">Android</p>
+                  <p style="font-size: xx-large">—</p>
+                </div>
+                <div>
+                    <p>- 자바</p>
+                    <p>- 안드로이드</p>
+                </div>
+              </div>
+              <div id="curriculum_web">
+                <div>
+                    <p style="font-size: xx-large">Web</p>
+                  <p style="font-size: xx-large">—</p>
+                </div>
+                <div>
+                    <p>- html, css</p>
+                    <p>- 자바스크립트</p>
+                    <p>- node.js</p>
+                </div>
+              </div>
+              <div id="curriculum_iot">
+                <div>
+                  <p style="font-size: xx-large">iot</p>
+                  <p style="font-size: xx-large">—</p>
+                </div>
+                <div>
+                    <p>- 아두이노</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="prize">
+            <div id="prize_title">
+              <p>수상실적</p>
+              <p>—</p>
+            </div>
+            <div id="pri_2014">
+              <p>2014</p>
+            </div>
+            <div id="prize_2014">
+              <p>- 2014 교내 과학경시대회 UCC 부문  금상</p>
+              <p>- 2014 모바일 콘텐츠 경진대회 게임 부문 금상</p>
+            </div>
+            <div id="pri_2015">
+              <p>2015</p>
+            </div>
+            <div id="prize_2015">
+              <p>- 2015 교내 과학경시대회 UCC 부문 금상</p>
+              <p>- 2015 그래픽 디자인 공모전</p>
+              <p>   ㄴ게임 그래픽/캐릭터 디자인 부문 대상</p>
+              <p>   ㄴ모션 그래픽 부문 은상, 동상</p>
+              <p>- 선린 해커톤 은상, 장려상</p>
+              <p>- 2015 영상공모전 금상, 은상</p>
+              <p>- 디지털콘텐츠경진대회 응용 S/W 부문 은상, 동상</p>
+              <p>- 디지털콘텐츠경진대회 응용 멀티미디어 부문 금상, 동상</p>
+              <p>- 디지털콘텐츠경진대회 응용 웹 부문 동상</p>
+              <p>- 교내 정보올림피아드 동상</p>
+              <p>- 소셜벤처 경연대회 동상</p>
+            </div>
+          </div>
         </div>
         <div id="content_3">
-          test content_3
+          <div id="tell">
+            <div>
+              <img src="/images/phone.png" alt="phone" id="phone">
+            </div>
+            <div>
+              <p>부장 조재호 : 010-7168-3754</p>
+              <p>부부장 최권능 : 010-7168-3754</p>
+            </div>
+          </div>
+          <div id="mail">
+            <div>
+              <img src="/images/email.png" alt="email" id="email">
+            </div>
+            <div>
+            <p>real0131@gmail.com</p>
+            </div>
+          </div>
+          <div id="site">
+            <a href="https://www.facebook.com/sunrinana/"><img id="facebook" src="/images/facebook.png" alt="facebook"></a>
+            <a href="http://blog.naver.com/androidandapp56"><img id="blog" src="/images/blog.png" alt="blog"></a>
+          </div>
+          <footer>
+          <div id="footer">
+            <div>
+            <img  id="footer_logo" src="/images/logo_2.png" alt="logo">
+            </div>
+            <div id="copyright">
+              <p>© 2016 Android & Application</p>
+              <p>all rights reserved</p>
+              <p id="footer_cc"><a href="http://www.flaticon.com/authors/yannick">icon made by Yannick,</a><a href="http://www.flaticon.com/authors/google"> Google</a> <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> </p>
+            </div>
+          </div>
+          </footer>
         </div>
-        <!--content-->
       </div>
     </article>
   </div>
-    <script src="/javascripts/initialize.js"></script>
     <script src="/javascripts/main.js"></script>
-
   </body>
 </html>

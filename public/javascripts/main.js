@@ -1,25 +1,23 @@
-
-var nav_a = document.getElementById('nav_a');
-var nav_b = document.getElementById('nav_b');
-var nav_c = document.getElementById('nav_c');
-
 var content_1 = document.getElementById('content_1');
 var content_2 = document.getElementById('content_2');
 var content_3 = document.getElementById('content_3');
+var background_img1 = document.getElementById('background_img1');
+var background_img2 = document.getElementById('background_img2');
+var background_img3 = document.getElementById('background_img3');
 function nav_a_onclick(){
-    content_1.style.visibility = "visible";
-    content_2.style.visibility = "hidden";
-    content_3.style.visibility = "hidden";
+    content_1.style.display = "inline-block";
+    content_2.style.display = "none";
+    content_3.style.display = "none";
 }
 function nav_b_onclick(){
-    content_1.style.visibility = "hidden";
-    content_2.style.visibility = "visible";
-    content_3.style.visibility = "hidden";
+    content_1.style.display = "none";
+    content_2.style.display = "inline-block";
+    content_3.style.display = "none";
 }
 function nav_c_onclick(){
-    content_1.style.visibility = "hidden";
-    content_2.style.visibility = "hidden";
-    content_3.style.visibility = "visible";
+    content_1.style.display = "none";
+    content_2.style.display = "none";
+    content_3.style.display = "inline-block";
 }
 /*
 nav_a.onclick = function(){
