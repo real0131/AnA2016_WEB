@@ -70,7 +70,7 @@ a#nav_a p{
   transition-duration: 0.5s;
 }
 #nav_b:hover{
-  color: white;
+  color: #ffffff;
   transition-duration: 0.5s;
 }
 a#nav_b p{
@@ -80,7 +80,7 @@ a#nav_b p{
   display: inline-block;
   width: 60px;
   height: auto;
-  color: white;
+  color: #505050;
   transition-duration: 0.5s;
 }
 a#nav_c p{
@@ -88,11 +88,12 @@ a#nav_c p{
   text-align: center;
 }
 #nav_c:hover{
+  color: #ffffff;
   transition-duration: 0.5s;
 }
 #nav_img{
   position: relative;
-  left: 70%;
+  left: 100%;
   width: 214px;
   height: 60px;
   display: inline;
@@ -101,7 +102,7 @@ a#nav_c p{
   width: auto;
   height: auto;
   position: absolute;
-  right: 20%;
+  right: 15%;
 }
 #nav_list li{
   margin-right: 20px;
@@ -113,7 +114,7 @@ article{
   text-align: center;
 }
 #content_view{
-  padding-top: 20%;
+  padding-top: 13%;
   width: 100%;
   height: 80%;
   margin: 0 auto;
@@ -122,6 +123,18 @@ article{
 #content_1{
   width: auto;
   height: auto;
+}
+#content_1_main{
+  font-size:xx-large;
+  margin-bottom: 2%;
+}
+#content_1_2_main{
+  font-size: larger;
+  margin-bottom: 2%;
+}
+#content_1_3_main{
+  font-size:larger;
+  margin-bottom: 7%;
 }
 p{
   color: white;
@@ -137,6 +150,7 @@ p{
 }
 #submit p{
   color: white;
+  transition: 0.5s;
 }
 #submit:hover{
   background-color: white;
@@ -145,7 +159,7 @@ p{
 #submit:hover p{
   background-color: white;
   color: black;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s;
 }
 div#submit p{
   text-align: center;
@@ -157,7 +171,4 @@ div#submit p{
 #content_3{
   visibility: hidden;
 }
-footer{
-  position: absolute;
-  top: 95%;
-}
+
